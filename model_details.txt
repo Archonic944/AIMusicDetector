@@ -1,0 +1,85 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 38, 98, 64)        640       
+                                                                 
+ batch_normalization (Batch  (None, 38, 98, 64)        256       
+ Normalization)                                                  
+                                                                 
+ conv2d_1 (Conv2D)           (None, 36, 96, 64)        36928     
+                                                                 
+ batch_normalization_1 (Bat  (None, 36, 96, 64)        256       
+ chNormalization)                                                
+                                                                 
+ max_pooling2d (MaxPooling2  (None, 18, 48, 64)        0         
+ D)                                                              
+                                                                 
+ dropout (Dropout)           (None, 18, 48, 64)        0         
+                                                                 
+ conv2d_2 (Conv2D)           (None, 16, 46, 128)       73856     
+                                                                 
+ batch_normalization_2 (Bat  (None, 16, 46, 128)       512       
+ chNormalization)                                                
+                                                                 
+ conv2d_3 (Conv2D)           (None, 14, 44, 128)       147584    
+                                                                 
+ batch_normalization_3 (Bat  (None, 14, 44, 128)       512       
+ chNormalization)                                                
+                                                                 
+ max_pooling2d_1 (MaxPoolin  (None, 7, 22, 128)        0         
+ g2D)                                                            
+                                                                 
+ dropout_1 (Dropout)         (None, 7, 22, 128)        0         
+                                                                 
+ conv2d_4 (Conv2D)           (None, 5, 20, 256)        295168    
+                                                                 
+ batch_normalization_4 (Bat  (None, 5, 20, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ conv2d_5 (Conv2D)           (None, 3, 18, 256)        590080    
+                                                                 
+ batch_normalization_5 (Bat  (None, 3, 18, 256)        1024      
+ chNormalization)                                                
+                                                                 
+ max_pooling2d_2 (MaxPoolin  (None, 1, 9, 256)         0         
+ g2D)                                                            
+                                                                 
+ dropout_2 (Dropout)         (None, 1, 9, 256)         0         
+                                                                 
+ flatten (Flatten)           (None, 2304)              0         
+                                                                 
+ dense (Dense)               (None, 256)               590080    
+                                                                 
+ batch_normalization_6 (Bat  (None, 256)               1024      
+ chNormalization)                                                
+                                                                 
+ dropout_3 (Dropout)         (None, 256)               0         
+                                                                 
+ dense_1 (Dense)             (None, 2)                 514       
+                                                                 
+=================================================================
+Total params: 1739458 (6.64 MB)
+Trainable params: 1737154 (6.63 MB)
+Non-trainable params: 2304 (9.00 KB)
+_________________________________________________________________
+
+Activation for output layer: softmax
+Activation for convolutional layers: relu
+Optimizer: 
+  name: adam
+  learning_rate: 0.0010000000474974513
+  weight_decay: None
+  clipnorm: None
+  global_clipnorm: None
+  clipvalue: None
+  use_ema: False
+  ema_momentum: 0.99
+  ema_overwrite_frequency: None
+  loss_scale_factor: None
+  gradient_accumulation_steps: None
+  beta_1: 0.9
+  beta_2: 0.999
+  epsilon: 1e-07
+  amsgrad: False
+
