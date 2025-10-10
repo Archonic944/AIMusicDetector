@@ -1,4 +1,8 @@
-A machine learning model that determines if a song was generated with AI. Code for the web interface is at [Archonic944/AudioClassificationWeb](https://github.com/archonic944/AudioClassificationWeb)
+A machine learning model that determines if a song was generated with AI. 
+
+**Code for the web interface is at [Archonic944/AudioClassificationWeb](https://github.com/archonic944/AudioClassificationWeb)**
+
+# How it works
 
 Chops the song into 1-second segments then feeds each segment to a TensorFlow/Keras sequential model with 5 convolutional blocks.
 Final certainty for a song is determined by dividing segments evaluated as "AI" by the total number of segments in the song.
