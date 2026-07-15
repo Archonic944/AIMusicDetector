@@ -1,4 +1,6 @@
-A machine learning model that determines if a song was generated with AI. 
+A machine learning model that determines if a song was generated with AI.
+
+My paper is here: https://docs.google.com/document/d/1sdP8OAs1Wm_P7HuCmR7NCxp9AXCGqfWZ/edit?usp=sharing&ouid=107571381931843301814&rtpof=true&sd=true
 
 **Code for the web interface is at [Archonic944/AudioClassificationWeb](https://github.com/archonic944/AudioClassificationWeb)**. Live demo not currently available (sorry)
 
