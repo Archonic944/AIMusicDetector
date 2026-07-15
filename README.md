@@ -1,6 +1,6 @@
 A machine learning model that determines if a song was generated with AI. 
 
-**Code for the web interface is at [Archonic944/AudioClassificationWeb](https://github.com/archonic944/AudioClassificationWeb)**
+**Code for the web interface is at [Archonic944/AudioClassificationWeb](https://github.com/archonic944/AudioClassificationWeb)**. Live demo not currently available (sorry)
 
 # How it works
 
